@@ -11,22 +11,20 @@ package edu.ujmd.Ejercicio.Clases;
  */
 public class Persona {
 
-    private String Nombre;
-    private String Apellido;
-    private String CargoE;
-    private int Edad;
-    private String Direccion;
-    public String getNombre;
-    public String getApellido;
+     public String Nombre;
+     public String Apellido;
+     public String CargoE;
+     
+     public Persona() 
+     {
 
-    public Persona() {
-        Nombre = "";
-        Apellido = "";
-        Edad = 0;
-        CargoE = "";
-
+     }
+        public Persona(String Nombre, String Apellido, String CargoE) {
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.CargoE = CargoE;
     }
-
+        
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
@@ -42,27 +40,10 @@ public class Persona {
         return Apellido;
     }
   
-      public void setCargoE(String CargoE) {
-        this.CargoE = CargoE;
+      public void setCargoE(String Cargo) {
+        this.CargoE = Cargo;
     }
     public String getCargoE() {
         return CargoE;
-    }
-
-    public void setEdad(int Edad) {
-        this.Edad = Edad;
-    }
-
-    public int getEdad() {
-        return Edad;
-    }
-
-    public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
-    }
-
-    public String getDireccion() {
-        return Direccion;      
-    }
-       
+    }    
 }
